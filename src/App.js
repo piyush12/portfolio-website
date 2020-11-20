@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+
+import Layout from "./components/Layout";
+import useToggleTheme from "./utils/useToggleTheme";
+
+const HomePage = lazy(() => import("./Pages/HomePage"));
+const ProjectPage = lazy(() => import("./Pages/Project"));
+const SkillPage = lazy(() => import("./Pages/SkillPage"));
 
 function App() {
+  const theme = useToggleTheme();
+  const mode = { theme: theme.theme };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={mode}>
+      <Router>
+        <Layout>
+          <Suspense fallback="...loading">
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/skills" component={SkillPage} />
+              <Route path="/projects" component={ProjectPage} />
+            </Switch>
+          </Suspense>
+        </Layout>
+      </Router>
+    </ThemeProvider>
   );
 }
 

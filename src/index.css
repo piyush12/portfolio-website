@@ -154,8 +154,12 @@ button {
   cursor: pointer;
 }
 
+.mobile-nav {
+  display: none;
+}
 @media (max-width: 640px) {
   .mobile-nav.mobile-nav-open {
     z-index: 9;
+    display: block;
   }
 }

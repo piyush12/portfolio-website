@@ -108,6 +108,7 @@ button {
   height: 30px;
   border-radius: 50%;
   background: transparent;
+  z-index: 92;
 }
 
 .background {
@@ -125,7 +126,6 @@ button {
   left: 0;
   bottom: 0;
   width: 300px;
-  z-index: 9;
 }
 
 .mobile-nav ul,
@@ -154,12 +154,8 @@ button {
   cursor: pointer;
 }
 
-.mobile-nav {
-  display: none;
-}
-
 @media (max-width: 640px) {
-  .mobile-nav {
-    display: block;
+  .mobile-nav.mobile-nav-open {
+    z-index: 9;
   }
 }

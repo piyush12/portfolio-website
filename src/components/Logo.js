@@ -21,6 +21,8 @@ const LinkStyle = styled(Link)`
 
   @media ${device.mobileL} {
     padding-left: 4rem;
+    z-index: 2;
+    position: relative;
   }
 `;
 

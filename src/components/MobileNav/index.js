@@ -8,6 +8,7 @@ import { Navigation } from "./Navigation";
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    display: "block",
     transition: {
       type: "spring",
       stiffness: 20,
@@ -16,6 +17,7 @@ const sidebar = {
   }),
   closed: {
     clipPath: "circle(20px at 32px 33px)",
+    display: "none",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -43,7 +45,7 @@ export const MobileMenu = () => {
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        className="mobile-nav"
+        className={`mobile-nav ${isOpen ? "mobile-nav-open" : ""}`}
       >
         <motion.div className="background" variants={sidebar} />
         <Navigation />

@@ -37,7 +37,7 @@ export const PROJECT_DATA = [
     id: "xdi127",
     title: "My Portfolio",
     description: "React, Styled Components, Framer Motion",
-    url: "https://myecommerceapp.netlify.app/",
+    url: "https://piyushweb.netlify.app/",
     image: portfolio,
   },
 ];

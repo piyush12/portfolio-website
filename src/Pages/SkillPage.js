@@ -11,6 +11,7 @@ import {
 } from "react-icons/di";
 
 import { SiStyledComponents, SiApollographql, SiRedux } from "react-icons/si";
+import { device } from "../utils/globalConst";
 
 const SkillStyle = styled.div`
   ul {
@@ -29,6 +30,11 @@ const SkillStyle = styled.div`
     padding: 1rem 2rem;
     margin: 0 4rem;
     text-align: center;
+
+    @media ${device.mobileL} {
+      padding: 1rem 1rem;
+      margin: 0 2rem;
+    }
   }
   span {
     font-size: 1.5rem;

@@ -6,6 +6,7 @@ const FooterStyle = styled.footer`
   padding-top: 2rem;
   border-top: 1px solid #035377;
   margin-top: 3rem;
+  z-index: 8;
 
   ul {
     margin: 0;

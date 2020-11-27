@@ -3,6 +3,7 @@ import pizza from "../assets/images/portfolio/slick-pizza.jpg";
 import githubBattle from "../assets/images/portfolio/github-battle.jpg";
 import ecommerce from "../assets/images/portfolio/ecommerce.jpg";
 import portfolio from "../assets/images/portfolio/portfolio.jpg";
+import eventCalendar from "../assets/images/portfolio/event-calendar.png";
 
 export const PROJECT_DATA = [
   {
@@ -39,6 +40,13 @@ export const PROJECT_DATA = [
     description: "React, Styled Components, Framer Motion",
     url: "https://piyushweb.netlify.app/",
     image: portfolio,
+  },
+  {
+    id: "xdi128",
+    title: "Event Calendar",
+    description: "React, Styled Components, date-fns, custom hooks",
+    url: "https://events-calendar.netlify.app/",
+    image: eventCalendar,
   },
 ];
 

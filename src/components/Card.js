@@ -36,6 +36,11 @@ const CardStyle = styled.div`
     padding: 0.4rem;
     margin-right: 1rem;
     color: #fff;
+    margin-bottom: 8px;
+  }
+  p {
+    display: flex;
+    flex-wrap: wrap;
   }
 `;
 function Card({ image, description, title, url }) {

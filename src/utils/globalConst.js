@@ -4,6 +4,7 @@ import githubBattle from "../assets/images/portfolio/github-battle.jpg";
 import ecommerce from "../assets/images/portfolio/ecommerce.jpg";
 import portfolio from "../assets/images/portfolio/portfolio.jpg";
 import eventCalendar from "../assets/images/portfolio/event-calendar.png";
+import reactToast from "../assets/images/portfolio/react-toast.png";
 
 export const PROJECT_DATA = [
   {
@@ -46,6 +47,13 @@ export const PROJECT_DATA = [
     title: "Event Calendar",
     description: "React, Styled Components, date-fns, custom hooks",
     url: "https://events-calendar.netlify.app/",
+    image: eventCalendar,
+  },
+  {
+    id: "xdi129",
+    title: "React Toast Component",
+    description: "React, Styled Components, custom hooks",
+    url: "https://reacttoast.netlify.app/",
     image: eventCalendar,
   },
 ];

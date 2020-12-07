@@ -54,7 +54,7 @@ export const PROJECT_DATA = [
     title: "React Toast Component",
     description: "React, Styled Components, custom hooks",
     url: "https://reacttoast.netlify.app/",
-    image: eventCalendar,
+    image: reactToast,
   },
 ];
 
